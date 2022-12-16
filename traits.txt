@@ -1,0 +1,113 @@
+**Traits
+
+Depressed,
+Iron-Willed,
+Optimist,
+Hendonist,
+Stressed,
+Wounded,
+Scarred,
+"Localized Pain",
+Attractive,
+Genius,
+Strong,
+Smart,
+Stupid,
+Stutter,
+Ugly,
+Weak,
+Giant,
+Left-Handed,
+Brawny,
+Frail,
+Groomed (Strong Salad),
+Duelist,
+Game Master,
+Calm / Volatile,
+Charitable / Greedy,
+Diligent / Lazy,
+Patient / Hot Headed,
+Humble / Proud,
+Brave / Nervous,
+Craven,
+Cruel,
+Cynical,
+Gregarious,
+Honest,
+Just,
+Shy,
+Stubborn,
+Nimble,
+Brawler,
+Tough,
+Wimp,
+Fast Learner,
+Slow Learner,
+Abrasive,
+Annoying Voice,
+Careful Shooter,
+Trigger-happy,
+
+**Leader Traits,
+Aggressive Leader,
+Defender,
+Direct Leader,
+Flanker,
+Inspiring Leader,
+Organizer,
+Trickster ,
+Unyielding,
+
+Straight,
+Homosexual,
+Bisexual,
+
+Track birth location,
+
+
+** Demo Roles
+- Goalie (Defense)
+- Center (Offense)
+- L Wing (Offense)
+- R Wing (Offense)
+- L Defense (Defense)
+- R Defense (Defense)
+- Captain (25% of all Stats added to team)
+- Untrained, Beginner, Intermediate, Advanced, Expert, Hall of Fame
+
+
+** Demo Traits
+# Get a trial of 10-15 traits and start from there
+Genius (+3 to Offense, Defense, +1 to Agility)
+Strong (+2 to Offense, Defense)
+Stupid (-2 to all)
+Weak (-2 to Offense, Defense)
+Giant (+1 to Offense, +2 to Defense, -1 to Speed, -2 to Agility)
+Left-Handed (+2 to Offense, Defense)
+Brawny (+1 to Offense, +2 to Defense, -1 to Speed, Agility)
+Frail (-2 to all)
+Nimble (+2 to Speed, Agility)
+Careful Shooter (+2 to Offense, -1 to Speed, +1 to Agility)
+Trigger-happy (-1 to Offense, +2 to Speed, Agility)
+
+
+*** Game Day
+- Injuries (broken legs, cuts, brain damage, etc.) are common and only take the player out for AT MOST 2 games
+- Injuries can result in death, but players are capable of coming back from the dead
+- Injuries can results in loss of limb
+
+
+
+*** To Do Features
+- Different league levels (Recreational, Competitive, Minor League, Major League)
+- Position Skill Levels (Rookie, Competent, Intermediate, Advanced, Expert, Hall of Fame)
+- Players can have multiple position skill levels (Rookie Center, Advanced Goalie, etc.)
+- Practice in between games
+- Assistant Coaches (5 total) (unlocked after advancing in league level) (Defensive Coach, Offensive Coach)
+- Coach Skills
+- Player Captains
+- Injuries during practice (rare), injuries during Game (common)
+- Players can become coaches
+- Revamp Draft (Include selection from entire league roster) * maybe in recreational and competitive you are assigned team members
+- larger roster size when advancing leagues
+- saving your team over time

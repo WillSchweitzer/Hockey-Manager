@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html dir='ltr' lang="en">
+<meta charset="utf-8">
+
+<head>
+    <title>Hockey Manager</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/91368808da.js" crossorigin="anonymous"></script>
+    <script src="./scripts.js" defer></script>
+</head>
+
+<body onload="init('home')">
+
+    <button type="button" id="addToRoster">Add Player to Team</button>
+    <button type="button" id="playerBattle">Battle</button>
+    <button type="button" id="showRoster">Show Roster</button>
+    <button type="button" id="teamBattle">Team Battle</button>
+    <button type="button" id="draftBtn">Draft</button>
+    <a href="./draft.html">Draft</a>
+
+    <figure id="playerFigure"> </figure>
+    <figure id="playerFigure2"> </figure>
+    <ul id="rosterContainer">
+
+    </ul>
+
+    <div class="matchContainer flex-row gap justify-between">
+        <div id="slot1"> </div>
+        <div id="slot2"> </div>
+    </div>
+
+    <div id="resultsContainer">
+
+    </div>
+
+    <main id="content">
+
+    </main>
+
+
+
+
+    <template id="playerCard">
+        <div class="card">
+            <figure id="cardFigure">
+                <svg height="200" width="200">
+                    <ellipse cx="100" cy="136" rx="45" ry="60" stroke-width="4"></ellipse>
+                    <circle cx="100" cy="66.75" r="37" stroke-width="4"></circle>
+                </svg>
+            </figure>
+            <div class="cardDetails">
+                <h4 class="cardHeader">Player</h4>
+                <span id="playerName">Firstname Lastname</span>
+                <span id="playerLevel">Level 0</span>
+                <meter id="playerExperience" min="0" max="100" value="0"></meter>
+                <span id="playerPosition">Novice Position</span>
+            </div>
+            <div class="cardDetails">
+                <h4 class="cardHeader">Stats</h4>
+                <div><span>Offense:</span><span id="playerOffense">00</span></div>
+                <div><span>Defense:</span><span id="playerDefense">00</span></div>
+                <div><span>Speed:</span><span id="playerSpeed">00</span></div>
+                <div><span>Offense:</span><span id="playerAgility">00</span></div>
+            </div>
+            <div class="cardDetails">
+                <h4 class="cardHeader">Attributes</h4>
+                <ul id="playerAtributes" class="unlisted"> </ul>
+            </div>
+        </div>
+    </template>
+
+    <template id="teamCard">
+        <div class="teamCard rounded">
+            <figure class="teamPortrait rounded">
+                <span class="teamRecord"></span>
+                <img src="" alt="Team Profile Picture">
+                <figcaption class="teamName"></figcaption>
+            </figure>
+
+            <div class="teamStatsContainer flex-row"> </div>
+
+            <div class="teamTactic"> </div>
+        </div>
+    </template>
+    <template id="teamCardTacticsBtns">
+        <fieldset class="teamTactics rounded flex-row justify-between">
+            <legend>Select a Team Tactic</legend>
+
+            <div class="tacticItem flex-col">
+                <input type="radio" name="tactic" id="counterTactic" class="tacticInput" value="Counter">
+                <label for="counterTactic" class="rounded"><i class="fa-solid fa-retweet"></i> Counter</label>
+                <span class="tacticBonus">+10% vs Aggressive</span>
+            </div>
+            <div class="tacticItem flex-col">
+                <input type="radio" name="tactic" id="fortifyTactic" class="tacticInput" value="Fortify">
+                <label for="fortifyTactic" class="rounded"><i class="fa-solid fa-igloo"></i> Fortify</label>
+                <span class="tacticBonus">+10% vs Counter</span>
+            </div>
+            <div class="tacticItem flex-col">
+                <input type="radio" name="tactic" id="aggressiveTactic" class="tacticInput" value="Aggressive">
+                <label for="aggressiveTactic" class="rounded"><i class="fa-solid fa-angles-right"></i> Aggressive</label>
+                <span class="tacticBonus">+10% vs Fortify</span>
+            </div>
+        </fieldset>
+    </template>
+
+    <template id="matchResults">
+
+    </template>
+
+    <template id="playerCardListItem">
+        <button type="button" name="button" class="playerCardListItem rounded flex-row">
+            <figure>
+
+            </figure>
+            <div class="playerNameContainer flex-col justify-center">
+                <span class="playerName"></span>
+            </div>
+            <div class="playerPositionContainer flex-col justify-center h-100">
+                <span class="playerPositionAbility"></span>
+                <span class="playerPosition"></span>
+            </div>
+            <div class="levelContainer flex-col justify-center h-100">
+                <span class="playerLevel"></span>
+                <meter value="50" min="0" max="100" class="playerExperience"></meter>
+                <span class="newXP"></span>
+            </div>
+            <div class="playerStatsContainer flex-row justify-between h-100">
+
+            </div>
+        </button>
+    </template>
+
+    <template id="statItem">
+        <div class="statItem flex-col">
+            <h6 class="statTitle">MMM</h6>
+            <span class="rounded statAmount">00</span>
+        </div>
+    </template>
+
+    <template id="draftContainer">
+        <div class="draftContainer">
+            <div class="flex-row justify-between"> </div>
+
+            <section id="draftPlayerContainer" class="flex-row justify-center"> </section>
+
+            <div class="teamContainer flex-row justify-center"> </div>
+        </div>
+    </template>
+
+    <template id="teamCardVerticalListItem">
+        <div class="teamCardVerticalListItem rounded">
+            <figure class="rounded">
+                <img src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <div class="flex-col">
+
+            </div>
+        </div>
+    </template>
+
+    <template id="topNav">
+        <nav class="topNav">
+            <h2>Hockey Game</h2>
+            <a href="./index.html">Home</a>
+            <a href="./draft.html">Draft</a>
+        </nav>
+    </template>
+</body>
+</html>

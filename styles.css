@@ -1,0 +1,440 @@
+:root {
+    /* Variables */
+    --white: #F6F0ED;
+    --dark-blue: #154866;
+    --green: #4FCF95;
+    --red: #EE6C4D;
+    --blue: #2274A5;
+    --black: #11222D;
+
+    --border-radius: 7px;
+
+    padding: 0;
+    margin: 0;
+    /* font-size: 24pt; */
+    font-size: 16pt;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: var(--black);
+}
+
+meter {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+nav {
+    background-color: var(--white);
+}
+
+.muted {
+    color: gray;
+}
+
+.gap {
+    gap: 1rem;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.hidden {
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    cursor: default;
+}
+
+
+
+/* Action Container */
+.action-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-container button {
+    --button-size: 40px;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: inherit;
+    padding: calc(var(--button-size) / 2);
+    margin: calc(var(--button-size) / 2);
+    border-radius: 10px;
+}
+
+.action-container button i {
+    font-size: 1.1rem;
+    padding-right: 0.25em;
+}
+
+
+/* Player Card */
+
+.card-header{
+    text-align: center;
+    color: white;
+    background-color: cyan;
+}
+
+.player-card .container {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 0.5em;
+}
+
+.container span {
+    display: block;
+}
+
+
+
+/* Confirmed */
+.playerContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.table div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.playerView {
+    text-align: center;
+    width: 300px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.player-card {
+    border:2px solid black;
+    border-radius: 20px;
+    padding: 1.5rem;
+    width: 200px;
+}
+
+.player-card-header {
+    font-size: 1.5rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.playerContainerTitle {
+    text-align: center;
+    background-color: #00A2FF;
+    color: white;
+    padding: 3px 0;
+    margin: 0 10% 10% 10%;
+}
+
+.unlisted {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.unlisted li {
+    padding:0;
+}
+
+.list-header {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+svg {
+    fill: white;
+    stroke: black;
+}
+
+svg circle {
+    -webkit-filter: drop-shadow( 0px 1px 2px rgba(0, 0, 0, .4));
+    filter: drop-shadow( 0px 1px 2px rgba(0, 0, 0, .4));
+}
+
+.card {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+figure#cardFigure {
+    text-align: center;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+div.cardDetails {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.cardDetails div {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Team Card */
+.rounded {
+    border-radius: var(--border-radius);
+}
+
+.vertically-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.teamCard {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 1rem;
+    width: 500px;
+}
+
+figure.teamPortrait {
+    height: 200px;
+    width: 40%;
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--blue);
+}
+
+span.teamRecord {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+figure.teamPortrait img {
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+figure.teamPortrait figcaption.teamName {
+    line-height: 20px;
+    margin-top: 20px;
+    font-size: 0.75rem;
+}
+
+div.teamStatsContainer {
+    margin: 1rem auto 1.5rem;
+    width: 45%;
+    justify-content: space-around;
+}
+
+div.statItem {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+h6.statTitle {
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+span.statAmount {
+    background-color: var(--blue);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px 0;
+}
+
+.percentage::after {
+    content: "%";
+}
+
+span.statModifier {
+    font-size: 0.7rem;
+}
+
+fieldset.teamTactics {
+    justify-content: space-between;
+}
+
+div.tacticItem {
+    width: 140px;
+    text-align: center;
+}
+
+span.tacticBonus {
+    font-size: 0.7em;
+    opacity: 0;
+    margin-top: 10px;
+}
+
+div.tacticItem > label {
+    cursor: pointer;
+    border: 2px solid transparent;
+    font-size: 0.8rem;
+    background-color: var(--dark-blue);
+    padding: 0.4em 0;
+}
+
+div.tacticItem > input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+div.tacticItem > label:hover {
+    border-color: var(--white);
+}
+
+input.tacticInput:checked ~ label {
+    background-color: var(--blue);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: color 300ms;
+}
+
+input.tacticInput:checked ~ span.tacticBonus {
+    opacity: 100;
+    transition: opacity 200ms;
+}
+
+/* playerCardListItem */
+button.playerCardListItem {
+    --button-height: 100px;
+    background-color: var(--dark-blue);
+    border: 0;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 0.8rem;
+    height: var(--button-height);
+    padding: 0.2rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+button.playerCardListItem > figure {
+    margin: 0;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+button.playerCardListItem > div.playerNameContainer {
+    font-weight: bold;
+    height: 100%;
+    min-width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis "...";
+}
+
+button.playerCardListItem > div.playerPositionContainer {
+    min-width: 150px;
+}
+
+button.playerCardListItem > div.levelContainer {
+    margin-right: 15px;
+}
+
+/* Draft */
+.draftContainer {
+    border: 1px solid gray;
+    width: 90vw;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+#draftPlayerContainer {
+    height: 100px;
+    padding: 1rem;
+}
+
+.draftContainer > div.teamContainer {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.teamCardVerticalListItem {
+    --width: 300px;
+    color: var(--white);
+    background-color: var(--dark-blue);
+    width: var(--width);
+    height: calc(1.5 * var(--width));
+}
+
+.teamCardVerticalListItem figure {
+    --figure-height: 200px;
+    width: 100%;
+    height: var(--figure-height);
+    background-color: var(--blue);
+    position: relative;
+}
+
+.teamCardVerticalListItem figure > figcaption {
+    color: var(--white);
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+    -webkit-text-fill-color: var(--white);
+    -webkit-text-stroke: 1px var(--dark-blue);
+}
+
+div.simplePlayer {
+    padding: 0.4em;
+    gap: 10px;
+}
+
+div.simplePlayer > h6 {
+    align-items: center;
+    border: 1px solid green;
+    overflow: hidden;
+    white-space: nowrap;
+}

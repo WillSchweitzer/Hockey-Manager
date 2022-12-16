@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html dir='ltr' lang="en">
+<meta charset="utf-8">
+
+<head>
+    <title>Hockey Manager</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/91368808da.js" crossorigin="anonymous"></script>
+    <script src="./scripts.js" defer></script>
+</head>
+
+<body onload="init('draft')">
+
+    <main id="content">
+
+    </main>
+
+    <template id="simplePlayerCard">
+        <div class="simplePlayer flex-row justify-between">
+            <span><i class="fa-solid fa-play"></i> </span>
+            <div class="flex-row gap">
+                <span class="attackStat">0</span>
+                <span class="defenseStat">0</span>
+                <span class="speedStat">0</span>
+            </div>
+        </div>
+    </template>
+
+    <template id="playerCardListItem">
+        <button type="button" name="button" class="playerCardListItem rounded flex-row">
+            <figure>
+
+            </figure>
+            <div class="playerNameContainer flex-col justify-center">
+                <span class="playerName"></span>
+            </div>
+            <div class="playerPositionContainer flex-col justify-center h-100">
+                <span class="playerPositionAbility"></span>
+                <span class="playerPosition"></span>
+            </div>
+            <div class="levelContainer flex-col justify-center h-100">
+                <span class="playerLevel"></span>
+                <meter value="50" min="0" max="100" class="playerExperience"></meter>
+                <span class="newXP"></span>
+            </div>
+            <div class="playerStatsContainer flex-row justify-between h-100">
+
+            </div>
+        </button>
+    </template>
+
+    <template id="statItem">
+        <div class="statItem flex-col">
+            <h6 class="statTitle">MMM</h6>
+            <span class="rounded statAmount">00</span>
+        </div>
+    </template>
+
+    <template id="draftContainer">
+        <div class="draftContainer">
+            <div class="flex-row justify-between"> </div>
+
+            <section id="draftPlayerContainer" class="flex-row justify-center"> </section>
+
+            <div class="teamContainer flex-row justify-center"> </div>
+        </div>
+    </template>
+
+    <template id="teamCardVerticalListItem">
+        <div class="teamCardVerticalListItem rounded">
+            <figure class="rounded">
+                <img src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <div class="playerContainer flex-col">
+
+            </div>
+        </div>
+    </template>
+
+    <template id="topNav">
+        <nav class="topNav">
+            <h2>Hockey Game</h2>
+            <a href="./index.html">Home</a>
+            <a href="./draft.html">Draft</a>
+        </nav>
+    </template>
+</body>
+</html>
